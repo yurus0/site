@@ -127,7 +127,7 @@ export default function Home() {
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
         <div className="w-2/3 px-20 py-10 text-xl font-light">
-        For the past summer, I've been collaborating with the Data Analytics Department on an internal tool for anomaly flagging. This project involved developing and optimizing algorithms to enhance data quality and accuracy across the organization.
+        For the past summer, I have been collaborating with the Data Analytics Department on an internal tool for anomaly flagging. This project involved developing and optimizing algorithms to enhance data quality and accuracy across the organization.
         <br/> <br/>
         The nature of the work is confidential, but if you want to learn more about this experience, feel free to reach out.
         </div>
@@ -177,7 +177,7 @@ export default function Home() {
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
         <div className="w-2/3 px-20 py-10 text-xl font-light">
         For a period of 4 months, I&apos;ve been collaborating with the Dev Team of FeverTokens to work on 3 main Features. Contributed to the team&apos;s success by delivering impactful solutions in a fast-paced, collaborative development setting.
-        <br/> 
+        <br/>
         </div>
         <div className="w-1/4 pr-20 py-10">
           <div className="font-bold text-xs tracking-[.15em]">
