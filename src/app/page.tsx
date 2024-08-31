@@ -2,6 +2,7 @@
 import VerticalBanner from "@/components/VerticalBanner";
 import { LockClosedIcon } from "@heroicons/react/24/outline";
 import Image from 'next/image';
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -80,10 +81,10 @@ export default function Home() {
 
   return (
     <main className={`flex min-h-screen flex-col ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
-      <div className={`flex flex-row ${theme === 'dark' ? 'bg-black text-white' : 'bg-white text-black'}`}>
+      <div className={`flex flex-row ${theme === 'dark' ? 'bg-black text-white' : 'bg-black text-white'}`}>
       <VerticalBanner theme={theme} loaderVisible={loaderVisible} section={sectionName} />
 
-      <div id='dark-section' className="flex min-h-screen flex-col p-24 items-start">
+      <div id='dark-section' className="flex bg-black text-white min-h-screen flex-col p-24 items-start">
       <div className="min-h-min pt-24 pb-96 px-40">
         <div className="text-left">
           <div className="text-[#ffffff]/50 font-bold pb-8">Imane Benrazzouk</div>
@@ -143,6 +144,52 @@ export default function Home() {
 
             <LockClosedIcon className="h-4 w-4" />
             <span className="pl-1 underline underline-offset-1">View Work</span>
+          </div></div>
+      </div>
+      <div className="min-h-96 pt-48" >
+      <div className=" pl-48 flex flex-col pb-20">
+        <h1 className="text-xl font-light text-black pb-4">2023</h1>
+        <h2 className="pb-2 text-4xl font-semibold text-black">
+          FeverTokens
+        </h2>
+        <p className='text-4xl font-semibold text-red-500 opacity-70'>
+          Blockchain & NFTs
+        </p>
+      </div>
+      <div id='light-section' className="min-h-96 bg-red-100">
+        <div className="flex justify-end items-center py-20">
+        <Image
+            src="/FTname.png"
+            alt="bam"
+            width={500}
+            height={500}
+            className="pr-10"
+          />
+          <Image
+            src="/bkam.png"
+            alt="bam"
+            width={800}
+            height={500}
+          />
+          </div>
+      </div>
+      </div>
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
+        <div className="w-2/3 px-20 py-10 text-xl font-light">
+        For a period of 4 months, I've been collaborating with the Dev Team of FeverTokens to work on 3 main Features. Contributed to the team's success by delivering impactful solutions in a fast-paced, collaborative development setting.
+        <br/> 
+        </div>
+        <div className="w-1/4 pr-20 py-10">
+          <div className="font-bold text-xs tracking-[.15em]">
+            SOFTWARE DEVELOPEMENT ENGINEER
+          </div>
+          <div className="text-md font-light pt-1">
+            Software Development <br/> Blockchain <br/> Cloud Infrastructure <br/> APIs
+          </div><div className="pt-10 font-bold text-xs tracking-[.15em]">
+            LINK
+          </div>
+          <div className="text-md font-light flex flex-row items-center pt-1">
+          <Link href="https://app.fevertokens.io/"><span className="underline underline-offset-1">View Website</span></Link>
           </div></div>
       </div>
       </div>
