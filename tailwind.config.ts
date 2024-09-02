@@ -23,7 +23,9 @@ const config: Config = {
         slideDown: 'slideDown 2s infinite',
       },
     },
-  },
-  plugins: [],
+  }, 
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
 export default config;
