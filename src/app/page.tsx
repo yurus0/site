@@ -180,7 +180,7 @@ export default function Home() {
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
         <div className="animate-fade-left animate-ease-linear w-2/3 px-20 py-10 text-xl font-light">
-        My internship at FeverTokens, a prominent French company specializing in Blockchain technology, provided me with an in-depth experience in implementing crucial features to enhance the platform's functionality.
+        My internship at FeverTokens, a prominent French company specializing in Blockchain technology, provided me with an in-depth experience in implementing crucial features to enhance the platform&apos;s functionality.
         <br/>Over a span of four months, I focused on three pivotal tasks that were central to improving security, customization, and data collection.
         <br/> <br/>
         I made meaningful contributions to the team&apos;s success by implementing solutions that truly made an impact in a fast-paced, collaborative environment. This hands-on experience sharpened my technical skills and reinforced my ability to thrive in a dynamic, high-pressure setting.
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
       </div>
       <div className="w-2/3 px-10 py-10 text-xl font-light">
-      Our initial approach centered around crafting an email-based whitelist functionality that would simplify user addition while bolstering the platform's security. We explored various concepts to ensure a seamless process, ultimately settling on an automated system that managed access with minimal user intervention. The design remained clean and efficient, with thoughtful touches to keep everything intuitive. The result? A streamlined, secure platform where adding users became effortless, enhancing collaboration and safeguarding sensitive data with ease.
+      Our initial approach centered around crafting an email-based whitelist functionality that would simplify user addition while bolstering the platform&apos;s security. We explored various concepts to ensure a seamless process, ultimately settling on an automated system that managed access with minimal user intervention. The design remained clean and efficient, with thoughtful touches to keep everything intuitive. The result? A streamlined, secure platform where adding users became effortless, enhancing collaboration and safeguarding sensitive data with ease.
       </div>
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
@@ -262,7 +262,7 @@ export default function Home() {
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
         <div className="animate-fade-left animate-ease-linear w-2/3 px-20 py-10 text-xl font-light">
-        Our journey with the Covid infection recognition project began with a deep dive into a study from October 2020, which served as the foundation for building a robust Deep Learning model. The goal was clear: create a model capable of accurately identifying Covid infection in alveolar stem cells. We experimented with various approaches and ultimately succeeded in enhancing the model's accuracy from 68.96% to 79.31%. This improvement was achieved by expanding the dataset and fine-tuning the algorithms to better capture the nuances in the data.
+        Our journey with the Covid infection recognition project began with a deep dive into a study from October 2020, which served as the foundation for building a robust Deep Learning model. The goal was clear: create a model capable of accurately identifying Covid infection in alveolar stem cells. We experimented with various approaches and ultimately succeeded in enhancing the model&apos;s accuracy from 68.96% to 79.31%. This improvement was achieved by expanding the dataset and fine-tuning the algorithms to better capture the nuances in the data.
         <br/> <br/>
         The final step was to bring this model to life in a user-friendly interface. Using the Streamlit Framework, we developed a GUI that made the system incredibly accessible. The result was a sleek, interactive platform where users could simply drag and drop their input images, making complex bioinformatics more approachable for everyone involved.
         </div>
@@ -302,18 +302,21 @@ export default function Home() {
               alt="a"
               width={480}
               height={450}
+              layout="responsive"
             />
             <Image
               src="/e.jpg"
               alt="e"
               width={480}
               height={450}
+              layout="responsive"
             />
             <Image
               src="/i.jpg"
               alt="i"
               width={480}
               height={450}
+              layout="responsive"
             />
           </div>
 
@@ -323,18 +326,21 @@ export default function Home() {
               alt="o"
               width={480}
               height={450}
+              layout="responsive"
             />
             <Image
               src="/u.jpg"
               alt="u"
               width={480}
               height={450}
+              layout="responsive"
             />
             <Image
               src="/y.jpg"
               alt="y"
               width={480}
               height={450}
+              layout="responsive"
             />
           </div>
         </div>
