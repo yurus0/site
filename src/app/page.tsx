@@ -96,6 +96,7 @@ export default function Home() {
       </div>
       </div>
       </div>
+      <div id='light-section'>
       <div id='sec-exp'>
       <div className="min-h-96 pt-48" >
       <div className=" pl-48 flex flex-col pb-20">
@@ -107,7 +108,7 @@ export default function Home() {
           Central Bank of Morocco
         </p>
       </div>
-      <div id='light-section' className="min-h-96 bg-purple-50">
+      <div className="min-h-96 bg-purple-50">
         <div className="flex justify-end items-center opacity-50 py-20">
         <Image
             src="/Bank_Al-Maghrib_logo.svg"
@@ -233,6 +234,8 @@ export default function Home() {
             <span className="pl-1 underline underline-offset-1">View Work</span>
           </div></div>
       </div>
+      </div>
+
       </div>
     </main>
   );
