@@ -14,9 +14,9 @@ const VerticalBanner =({theme, loaderVisible, section}:{theme:string; loaderVisi
             </div>
             {!loaderVisible &&
             <div className="pt-96 flex flex-col text-sm font-light">
-                <div className={`pl-20 -rotate-90 ${section==='exp'?"opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Experience</div>
-                <div className={`pr-20  -rotate-90 ${section==='proj'?"opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Projects</div>
-                <div className={`pr-56  -rotate-90 ${section==='cred'?"opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Credits</div>
+                <div className={`pl-20 -rotate-90 ${section==="exp"? "opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Experience</div>
+                <div className={`pr-20  -rotate-90 ${section==="pro"? "opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Projects</div>
+                <div className={`pr-56  -rotate-90 ${section==="cred"? "opacity-100":"opacity-50"} ${theme==="dark"?"text-white":"text-black"}`}>Credits</div>
             </div>}
             <div className=""><VerticalLoader isVisible={loaderVisible}/></div>
         </div>
