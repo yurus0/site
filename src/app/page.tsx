@@ -99,6 +99,7 @@ export default function Home() {
       </div>
       </div>
       </div>
+      <div id='light-section'>
       <div id='sec-exp'>
       <div className={`min-h-96 pt-48  ${theme === "dark" ? 'bg-black text-black' : 'bg-white text-black'}`} >
       <div className=" pl-48 flex flex-col pb-20">
@@ -110,7 +111,7 @@ export default function Home() {
           Central Bank of Morocco
         </p>
       </div>
-      <div id='light-section' className="min-h-96 bg-purple-50">
+      <div className="min-h-96 bg-purple-50">
         <div className="flex justify-end items-center opacity-50 py-20">
         <Image
             src="/Bank_Al-Maghrib_logo.svg"
@@ -404,6 +405,8 @@ export default function Home() {
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/KObiuTFYTkM?si=HsqVCvfAp2VlpC6y" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      </div>
+
       </div>
 
       </div>
