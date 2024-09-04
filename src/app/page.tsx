@@ -65,7 +65,7 @@ export default function Home() {
       <VerticalBanner theme={theme} loaderVisible={loaderVisible} section={sectionName}/>
 
       <div id='dark-section' className="flex min-h-screen flex-col p-24 items-start">
-      <div className="min-h-screen py-24 px-40">
+      <div className="min-h-96 pt-24 px-40">
         <div className="text-left">
           <div className="text-[#ffffff]/50 font-bold pb-8">Imane Benrazzouk</div>
           <div className="text-3xl font-bold pb-2">Hello, there!</div>
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
       <div id='light-section'>
       <div id='sec-exp'>
-      <div className={`min-h-96 pt-48  ${theme === "dark" ? 'bg-black text-black' : 'bg-white text-black'}`} >
+      <div className={`min-h-96 pt-96  ${theme === "dark" ? 'bg-black text-black' : 'bg-white text-black'}`} >
       <div className=" pl-48 flex flex-col pb-20">
         <h1 className="text-xl font-light text-black pb-4">2024</h1>
         <h2 className="pb-2 text-4xl font-semibold text-black">
@@ -375,7 +375,6 @@ export default function Home() {
         </div>
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KObiuTFYTkM?si=HsqVCvfAp2VlpC6y" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
 
       </div>

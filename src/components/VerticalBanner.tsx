@@ -9,7 +9,7 @@ const VerticalBanner =({theme, loaderVisible, section}:{theme:string; loaderVisi
                 <div className={`pt-10 font-bold text-xl ${theme==="dark"?"text-white":"text-black"}`}>in</div>
                 <div className={`pt-10 font-bold text-xl ${theme==="dark"?"text-white":"text-black"}`}>
                     <EnvelopeIcon className={`h-5 w-6  ${theme==="dark"?"text-white":"text-black"}`}/></div>
-                <div className="pt-10 font-bold text-xl">
+                <div className="pt-10 pl-1 font-bold text-xl">
                     <GithubIcon height={18} width={18} theme={theme}/></div>
             </div>
             {!loaderVisible &&
