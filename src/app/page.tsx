@@ -138,21 +138,8 @@ export default function Home() {
           Blockchain & NFTs
         </p>
       </div>
-      <div id='light-section' className="min-h-96 bg-red-100">
-        <div className="flex justify-end items-center py-20">
-        <Image
-            src="/FTname.png"
-            alt="bam"
-            width={500}
-            height={500}
-            className="pr-10"
-          />
-          <Image
-            src="/bkam.png"
-            alt="bam"
-            width={800}
-            height={500}
-          />
+      <div id='light-section' className="min-h-96 bg-[url('/ft_bg.png')]">
+        <div className="flex justify-center items-center py-72 bg-red-300 bg-opacity-60 h-full">
           </div>
       </div>
       </div>
