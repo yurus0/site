@@ -14,69 +14,46 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      
-      const section2 = document.getElementById('dark-section');
-      if (section2) {
-        const rect = section2.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.bottom > 0;
-        if (isInView) {
-          setTheme("dark");
-          setLoaderVisible(true);
-          console.log('Theme:', theme);
-        }
-      }
-
-      const section = document.getElementById('light-section');
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.bottom > 0;
-        if (isInView) {
-          setTheme("light");
-          setLoaderVisible(false);
-          console.log('light');
-          console.log("Theme: ", theme);
-        }
-      }
-
-      // Check if 'dark-cov-bg' is in view
-      const sectionCov = document.getElementById('dark-cov-bg');
-      if (sectionCov) {
-        const rect = sectionCov.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.top > 0;
-        if (isInView) {
-          setTheme('dark');
-        } else {
-          setTheme('light');
-        }
-      }
-
+      const darkSection = document.getElementById('dark-section');
+      const lightSection = document.getElementById('light-section');
+      const darkCovBg = document.getElementById('dark-cov-bg');
       const sectionExp = document.getElementById('sec-exp');
-      if (sectionExp) {
-        const rect = sectionExp.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.bottom >= 0;
-        if (isInView) {
-          setSection('exp');
-          console.log('Section: exp');
-        } else {
-          setSection('nan');
-        }
+      const sectionProj = document.getElementById('sec-proj');
+
+      const isElementInView = (element: HTMLElement | null) => {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+      };
+      const isElementInViewTop = (element: HTMLElement | null) => {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight /2 && rect.bottom >window.innerHeight /4;
       }
 
-      // Check if 'sec-proj' is in view
-      const sectionProj = document.getElementById('sec-proj');
-      if (sectionProj) {
-        const rect = sectionProj.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight && rect.bottom >= 0;
-        if (isInView) {
-          setSection('proj');
-          console.log('Section: proj');
-        } else {
-          setSection('nan');
+      if (isElementInView(darkSection) || isElementInViewTop(darkCovBg)) {
+        setTheme('dark');
+        if(isElementInView(darkSection) && !isElementInView(darkCovBg)){
+          setLoaderVisible(true);
         }
+      } else if (isElementInView(lightSection)) {
+        setTheme('light');
+        setLoaderVisible(false);
       }
-      };
+
+      if (isElementInView(sectionExp)) {
+        setSection('exp');
+      } else if (isElementInView(sectionProj)) {
+        setSection('proj');
+      } else {
+        setSection('nan');
+      }
+    };
 
     window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -85,7 +62,7 @@ export default function Home() {
   return (
     <main className={`flex min-h-screen flex-col ${theme === "dark" ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <div className={`flex flex-row ${theme === "dark" ? 'bg-black text-white' : 'bg-white text-black'}`}>
-      <VerticalBanner theme={theme} loaderVisible={loaderVisible}/>
+      <VerticalBanner theme={theme} loaderVisible={loaderVisible} section={sectionName}/>
 
       <div id='dark-section' className="flex min-h-screen flex-col p-24 items-start">
       <div className="min-h-screen py-24 px-40">
@@ -303,21 +280,18 @@ export default function Home() {
               alt="a"
               width={480}
               height={450}
-              layout="responsive"
             />
             <Image
               src="/e.jpg"
               alt="e"
               width={480}
               height={450}
-              layout="responsive"
             />
             <Image
               src="/i.jpg"
               alt="i"
               width={480}
               height={450}
-              layout="responsive"
             />
           </div>
 
@@ -327,21 +301,18 @@ export default function Home() {
               alt="o"
               width={480}
               height={450}
-              layout="responsive"
             />
             <Image
               src="/u.jpg"
               alt="u"
               width={480}
               height={450}
-              layout="responsive"
             />
             <Image
               src="/y.jpg"
               alt="y"
               width={480}
               height={450}
-              layout="responsive"
             />
           </div>
         </div>
