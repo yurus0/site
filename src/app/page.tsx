@@ -1,4 +1,5 @@
 "use client";
+import GithubIcon from "@/components/GithubIcon";
 import VerticalBanner from "@/components/VerticalBanner";
 import { LockClosedIcon } from "@heroicons/react/24/outline";
 import Image from 'next/image';
@@ -67,7 +68,7 @@ export default function Home() {
       <div id='dark-section' className="flex min-h-screen flex-col p-24 items-start">
       <div className="min-h-96 pt-24 px-40">
         <div className="text-left">
-          <div className="text-[#ffffff]/50 font-bold pb-8">Imane Benrazzouk</div>
+          <div className="text-[#ffffff]/50 font-light pb-8">Imane Benrazzouk</div>
           <div className="text-3xl font-bold pb-2">Hello, there!</div>
           <div className="text-6xl font-bold pb-2">Hello, t<span className="hover:text-yellow-500">h</span>er<span className="hover:text-purple-500">e</span>!</div>
           <div className="text-9xl font-bold pb-4">He<span className="hover:text-cyan-500">l</span>lo, th<span className="hover:text-pink-500">e</span>re!</div>
@@ -139,7 +140,15 @@ export default function Home() {
         </p>
       </div>
       <div id='light-section' className="min-h-96 bg-[url('/ft_bg.png')]">
-        <div className="flex justify-center items-center py-72 bg-red-300 bg-opacity-60 h-full">
+        <div className="bg-red-300 bg-opacity-60 pt-10 px-10 pb-40">
+        <div className="flex justify-end items-start pb-96 opacity-70">
+          <Image
+            src="/FTname.png"
+            alt="ft"
+            width={200}
+            height={50}
+          />
+          </div>
           </div>
       </div>
       </div>
@@ -314,17 +323,43 @@ export default function Home() {
         </div>
         <div className="z-index w-1/4 pr-20 py-10">
           <div className="font-bold text-xs tracking-[.15em]">
-            SWE & RESEARCH ASSISTANT
+            GAME DEV & RESEARCH
           </div>
           <div className="text-md font-light pt-1">
-            Design Thinking <br/> Game Design <br/> Game Developement <br/> Generative AI <br/> Unity3D, C#, Blender
+            Design Thinking <br/> Game Design <br/> Game Developement <br/> Generative AI <br/> Unity3D, C#
           </div><div className="pt-10 font-bold text-xs tracking-[.15em]">
-            LINK
+            TECHNOLOGIES
           </div>
-          <div className="text-md font-light flex flex-row items-center pt-1">
-
-            <LockClosedIcon className="h-4 w-4" />
-            <span className="pl-1 underline underline-offset-1">View Work</span>
+          <div className="text-md font-light flex flex-row items-center pt-2">
+            <GithubIcon height={18} width={18} theme="light"/>
+            <div className="pl-2">
+              <Image
+                src="/unity.png"
+                alt="unity"
+                width={20}
+                height={20}
+              /></div>
+              <div className="pl-2">
+              <Image
+                src="/vs.png"
+                alt="vs"
+                width={20}
+                height={20}
+              /></div>
+              <div className="pl-2">
+              <Image
+                src="/csharp.webp"
+                alt="vs"
+                width={24}
+                height={24}
+              /></div>
+              <div className="pl-2">
+              <Image
+                src="/gpt.png"
+                alt="vs"
+                width={19}
+                height={19}
+              /></div>
           </div></div>
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
@@ -361,11 +396,153 @@ export default function Home() {
         04. Tailored Learning Experiences using GenAI {"("}OpenAI API plugin{")"} <br/>
         </div>
       </div>
+      <div className="min-h-96 pl-48 flex flex-col justify-end items-start bg-white" >
+      <div className="pb-10 flex flex-col">
+        <h1 className="text-xl font-light text-black pb-4">Web App</h1>
+        <h2 className="pb-4 text-4xl font-semibold text-black">
+          PainCare{" "}
+        </h2>
+        <p className="text-4xl font-semibold opacity-50 text-rose-600">
+          Women's Healthcare
+        </p>
+      </div>
+      </div>
+      <div className="min-h-96 bg-white flex flex-row justify-center items-center">
+        <img
+          src="/paincare2.png"
+          alt="paincare"
+          width={1000}
+          height={500}
+          />
+        {/*<Spline
+          scene="https://prod.spline.design/kjRkvsu18xkfylrL/scene.splinecode"
+        />*/}
+      </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
+        
+        <div className="z-index w-2/3 px-20 py-10 text-xl font-light">
+        The creation of PainCare began with a vision to provide a supportive, comprehensive tool for individuals managing endometriosis. The core objective was to empower users by offering personalized pain tracking and symptom management, enhancing their quality of life through an intuitive and user-friendly platform. Early on, we integrated AI-driven analytics to help users identify patterns in their symptoms and triggers, providing actionable insights and recommendations for better pain management.
+        <br/> <br/>
+        The app was designed with a range of supportive features, including customizable pain logs, medication tracking, and lifestyle tips, to keep users engaged and informed throughout their health journey.
+        </div>
+        <div className="z-index w-1/4 pr-20 py-10">
+          <div className="font-bold text-xs tracking-[.15em]">
+            SDE & DATA ANALYSIS
+          </div>
+          <div className="text-md font-light pt-1">
+            Design Thinking <br/> User Experience <br/> Software Development <br/> Data Analytics <br/> Data Visualization
+          </div><div className="pt-10 font-bold text-xs tracking-[.15em]">
+          TECHNOLOGIES
+          </div>
+          <div className="text-md font-light flex flex-row items-center pt-2">
+            <Link href="https://github.com">
+            <GithubIcon height={18} width={18} theme="light"/></Link>
+            <div className="pl-2">
+              <Link href="https://spring.io">
+              <Image
+                src="/spring.svg"
+                alt="spring"
+                width={21}
+                height={21}
+              /></Link>
+              </div>
+              <div className="pl-2">
+              <Link href="https://nextjs.org">
+              <Image
+                src="/nextjs.svg"
+                alt="next"
+                width={22}
+                height={22}
+              /></Link>
+              </div>
+              <div className="pl-2">
+              <Link href="https://threejs.org">
+              <Image
+                src="/threejs.svg"
+                alt="threejs"
+                width={20}
+                height={20}
+              /></Link></div>
+              <div className="pl-2">
+              <Link href="https://reactjs.org">
+              <Image
+                src="/react.svg"
+                alt="react"
+                width={20}
+                height={20}
+              /></Link></div>
+              <div className="pl-2">
+              <Link href="https://tailwindcss.com">
+              <Image
+                src="/tailwindcss.svg"
+                alt="twcss"
+                width={22}
+                height={22}
+              /></Link></div>
+              <div className="pl-2">
+              <Link href="https://docker.com">
+              <Image
+                src="/docker.svg"
+                alt="docker"
+                width={20}
+                height={20}/></Link></div>
+              <div className="pl-2">
+              <Link href="https://postgresql.org">
+              <Image
+                src="/postgresql.svg"
+                alt="postgresql"
+                width={20}
+                height={20}/></Link></div>
+
+              <div className="pl-2">
+              <Link href="https://postgresql.org">
+              hh
+              <Image
+                src="/square.svg"
+                alt="postgresql"
+                width={20}
+                height={20}/></Link></div>
+
+          </div></div>
+      </div>
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
+      <div className="w-1/4 pl-40 py-10">
+          <div className="font-bold text-md tracking-[.15em]">
+          Challenge
+          </div>
+          <div className="text-4xl font-bold pt-1">
+          Patient Support
+          </div>
+        </div>
+        <div className="w-2/3 px-10 py-10 text-xl font-light">
+        Designing a web application that effectively addresses the complex and individualistic nature of endometriosis required a holistic approach. The key challenges included ensuring that the app could cater to the diverse experiences of those with endometriosis, provide accurate symptom tracking, and offer personalized insights to assist in pain management.
+        <br/> <br/>
+        Traditional healthcare tools often lack the customization and real-time support necessary to meet these specific needs, making it essential to create a solution that was both adaptable and user-focused.
+        </div>
+      </div>
+
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
+      <div className="w-1/4 pl-40 py-10">
+          <div className="font-bold text-md tracking-[.15em]">
+          Solution
+          </div>
+          <div className="text-4xl font-bold pt-1">
+            PainCare
+          </div>
+        </div>
+        <div className="w-2/3 px-10 py-10 text-xl font-light">
+        PainCare offers a personalized approach to managing endometriosis by providing customizable pain and symptom tracking, AI-driven insights, and treatment management tools. With features like medication tracking and tailored lifestyle recommendations, the app empowers users to better understand their symptoms and make informed health decisions.
+        <br/><br/>
+        PainCare was built using a robust tech stack to provide an efficient and scalable solution. The backend is powered by Spring, while the frontend uses Next.js, React, and Three.js for interactive visualizations, with Tailwind CSS ensuring responsive design. PostgreSQL was implemented for data storage, and Docker was used for containerization, streamlining deployment and ensuring consistency across environments. Version control was managed via GitHub, supporting collaboration and continuous development.
+        </div>
       </div>
 
       </div>
 
+      </div>
+      <div className="min-h-96 flex flex-col justify-center text-left pl-48 py-48 bottom-0">
+        <div className="text-6xl font-bold text-left">Thank you for stopping by!</div>
+        <div className="text-xl font-light opacity-50 text-left pt-6 pl-2">imanebenrazzouk@ieee.org</div>
       </div>
     </main>
   );
