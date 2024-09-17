@@ -69,7 +69,7 @@ export default function Home() {
       <VerticalBanner theme={theme} loaderVisible={loaderVisible} section={sectionName}/>
 
       <div id='dark-section' className="flex min-h-screen flex-col p-24 items-start">
-      <div className="min-h-96 pt-24 px-40">
+      <div className="min-h-96 pt-24 px-40 cursor-default">
         <div className="text-left">
           <div className="text-[#ffffff]/50 font-light pb-8">Imane Benrazzouk</div>
           <div className="text-3xl font-bold pb-2">Hello, there!</div>
