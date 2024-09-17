@@ -20,6 +20,7 @@ export default function Home() {
       const darkCovBg = document.getElementById('dark-cov-bg');
       const sectionExp = document.getElementById('sec-exp');
       const sectionProj = document.getElementById('sec-proj');
+      const sectionCred = document.getElementById('sec-cred');
 
       const isElementInView = (element: HTMLElement | null) => {
         if (!element) return false;
@@ -44,8 +45,10 @@ export default function Home() {
 
       if (isElementInView(sectionExp)) {
         setSection('exp');
-      } else if (isElementInView(sectionProj)) {
+      } else if (isElementInView(sectionProj) && !isElementInViewTop(sectionCred)) {
         setSection('proj');
+      } else if (isElementInView(sectionCred)) {
+        setSection('cred');
       } else {
         setSection('nan');
       }
@@ -173,45 +176,6 @@ export default function Home() {
           <Link href="https://app.fevertokens.io/sign-in"><span className="underline underline-offset-1">View Website</span></Link>
           </div></div>
       </div>
-      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
-      <div className="w-1/4 pl-40 py-10">
-          <div className="font-bold text-md tracking-[.15em]">
-            Feature #1
-          </div>
-          <div className="text-4xl font-bold pt-1">
-            Access Control
-          </div>
-        </div>
-        <div className="w-2/3 px-10 py-10 text-xl font-light">
-        The first major task involved implementing advanced access control mechanisms to enhance user permission management on the FeverTokens platform. The feature focused on refining access control by setting specific limits on collaborator access, varying between different subscription plans. Middleware API integration played a key role in enforcing these restrictions, ensuring that user permissions aligned with the plan&apos;s guidelines.
-        </div>
-      </div>
-      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
-      <div className="w-1/4 pl-40 py-10">
-          <div className="font-bold text-md tracking-[.15em]">
-          Feature #2
-          </div>
-          <div className="text-4xl font-bold pt-1">
-            Emails Whitelist
-          </div>
-      </div>
-      <div className="w-2/3 px-10 py-10 text-xl font-light">
-      Our initial approach centered around crafting an email-based whitelist functionality that would simplify user addition while bolstering the platform&apos;s security. We explored various concepts to ensure a seamless process, ultimately settling on an automated system that managed access with minimal user intervention. The design remained clean and efficient, with thoughtful touches to keep everything intuitive. The result? A streamlined, secure platform where adding users became effortless, enhancing collaboration and safeguarding sensitive data with ease.
-      </div>
-      </div>
-      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
-      <div className="w-1/4 pl-40 py-10">
-          <div className="font-bold text-md tracking-[.15em]">
-          Feature #3
-          </div>
-          <div className="text-4xl font-bold pt-1">
-            Forms Builder
-          </div>
-        </div>
-        <div className="w-2/3 px-10 py-10 text-xl font-light">
-        We set out to create a Forms Builder that would give users the freedom to customize and craft their own data collection forms effortlessly. After exploring various design approaches, we landed on a drag-and-drop interface that struck the right balance between usability and versatility. The focus was on delivering a tool that was both intuitive and powerful, allowing users to tailor their forms to meet specific needs with minimal effort. The outcome was a seamless, user-friendly Forms Builder that made data collection customization straightforward and accessible.
-        </div>
-      </div>
 
       <div className="min-h-96 pt-48 bg-white" >
       <div className=" pl-48 flex flex-col pb-20">
@@ -331,7 +295,7 @@ export default function Home() {
             TECHNOLOGIES
           </div>
           <div className="text-md font-light flex flex-row items-center pt-2">
-            <GithubIcon height={18} width={18} theme="light"/>
+            <GithubIcon height={18} width={18} theme={theme}/>
             <div className="pl-2">
               <Image
                 src="/unity.png"
@@ -436,7 +400,7 @@ export default function Home() {
           </div>
           <div className="text-md font-light flex flex-row items-center pt-2">
             <Link href="https://github.com">
-            <GithubIcon height={18} width={18} theme="light"/></Link>
+            <GithubIcon height={18} width={18} theme={theme}/></Link>
             <div className="pl-2">
               <Link href="https://spring.io">
               <Image
@@ -493,16 +457,6 @@ export default function Home() {
                 alt="postgresql"
                 width={20}
                 height={20}/></Link></div>
-
-              <div className="pl-2">
-              <Link href="https://postgresql.org">
-              hh
-              <Image
-                src="/square.svg"
-                alt="postgresql"
-                width={20}
-                height={20}/></Link></div>
-
           </div></div>
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
@@ -536,13 +490,111 @@ export default function Home() {
         PainCare was built using a robust tech stack to provide an efficient and scalable solution. The backend is powered by Spring, while the frontend uses Next.js, React, and Three.js for interactive visualizations, with Tailwind CSS ensuring responsive design. PostgreSQL was implemented for data storage, and Docker was used for containerization, streamlining deployment and ensuring consistency across environments. Version control was managed via GitHub, supporting collaboration and continuous development.
         </div>
       </div>
-
+      
+      <div className="min-h-96 pt-48" >
+      <div className=" pl-48 flex flex-col pb-20">
+        <h1 className="text-xl font-light text-black pb-4">Fun</h1>
+        <h2 className="pb-2 text-4xl font-semibold text-black">
+          RustOS
+        </h2>
+        <p className='text-4xl font-semibold text-sky-500 opacity-50'>
+          Mini Operating System Kernel
+        </p>
+      </div>
+      <div id='light-section' className="min-h-96 bg-[url('/rust.jpg')]">
+        <div className="bg-sky-950 bg-opacity-30 px-10 py-10">
+        <div className="flex justify-center items-center py-20">
+          <Image
+            src="/rust.png"
+            alt="rust"
+            className="rounded-xl opacity-75 drop-shadow"
+            height={700}
+            width={700}
+            />
+          </div>
+          </div>
+      </div>
+      </div>
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-center px-10 pt-10 pb-60 text-black ">
+        
+        <div className="z-index w-2/3 px-20 py-10 text-xl font-light">
+        The development of the Mini Operating System Kernel began as an exploration into low-level systems programming, with the primary goal of designing a lightweight kernel that could serve as the foundation for more complex features. In its initial version, the kernel was able to print a message to the terminal, showcasing the basic bootstrapping of an operating system and establishing a proof of concept for further enhancements.
+        <br/> <br/>
+        Although initially minimalistic, the project laid the groundwork for future implementations, such as memory management, process scheduling, and system calls, to gradually transform it into a functional and modular operating system.
+        </div>
+        <div className="z-index w-1/4 pr-20 py-10">
+          <div className="font-bold text-xs tracking-[.15em]">
+            SOFTWARE ENGINEERING
+          </div>
+          <div className="text-md font-light pt-1">
+            Low-Level Development <br/> Kernel Bootstrapping <br/> Scalability <br/> Systems Programming
+          </div><div className="pt-10 font-bold text-xs tracking-[.15em]">
+          TECHNOLOGIES
+          </div>
+          <div className="text-md font-light flex flex-row items-center pt-2">
+            <Link href="https://github.com">
+            <GithubIcon height={18} width={18} theme={theme}/></Link>
+            <div className="pl-2">
+              <Link href="https://rust-lang.org">
+              <Image
+                src="/rust_logo.svg"
+                alt="rust"
+                width={21}
+                height={21}
+              /></Link>
+              </div>
+              <div className="pl-2">
+              <Link href="https://rust-lang.org">
+              <Image
+                src="/utm.png"
+                alt="utm"
+                width={22}
+                height={22}
+              /></Link>
+              </div>
+          </div></div>
+      </div>
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
+      <div className="w-1/4 pl-40 py-10">
+          <div className="font-bold text-md tracking-[.15em]">
+          Challenge
+          </div>
+          <div className="text-4xl font-bold pt-1">
+          Building
+          </div>
+        </div>
+        <div className="w-2/3 px-10 py-10 text-xl font-light">
+        Building an OS kernel from scratch poses unique challenges, particularly in ensuring correct hardware interactions and setting up a system that can eventually handle complex tasks like memory management and process scheduling. Each step ensured seamless hardware interaction and provided a foundation for future features.
+        <br/> <br/>
+        01. Bare Metal File Creation<br/>
+        02. Bootloader Implementation<br/>
+        03. Message Encoding<br/>
+        </div>
       </div>
 
+      <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
+      <div className="w-1/4 pl-40 py-10">
+          <div className="font-bold text-md tracking-[.15em]">
+          Solution
+          </div>
+          <div className="text-4xl font-bold pt-1">
+            Mini OS Kernel
+          </div>
+        </div>
+        <div className="w-2/3 px-10 py-10 text-xl font-light">
+        The initial version of the Mini Operating System Kernel successfully established basic terminal communication. Written in Rust, it was designed with modularity in mind, allowing for the seamless addition of more advanced system features in future iterations, such as memory handling and multitasking. By completing these first crucial steps, the project created a robust foundation for building a more advanced operating system.
+        </div>
       </div>
+      </div>
+
+      <div id="sec-cred">
       <div className="min-h-96 flex flex-col justify-center text-left pl-48 py-48 bottom-0">
         <div className="text-6xl font-bold text-left">Thank you for stopping by!</div>
         <div className="text-xl font-light opacity-50 text-left pt-6 pl-2">imanebenrazzouk@ieee.org</div>
+      </div>
+
+      </div>
+
       </div>
     </main>
   );
