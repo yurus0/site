@@ -64,7 +64,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={`flex min-h-screen flex-col ${theme === "dark" ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <main className={`flex min-h-screen w-full flex-col ${theme === "dark" ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <div className={`flex flex-row ${theme === "dark" ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <VerticalBanner theme={theme} loaderVisible={loaderVisible} section={sectionName}/>
 
