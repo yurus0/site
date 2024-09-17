@@ -100,12 +100,14 @@ export default function Home() {
             width={500}
             height={500}
             className="pr-10"
+            priority
           />
           <Image
             src="/bkam.png"
             alt="bam"
             width={800}
             height={500}
+            priority
           />
           </div>
       </div>
@@ -150,6 +152,7 @@ export default function Home() {
             alt="ft"
             width={200}
             height={50}
+            priority
           />
           </div>
           </div>
@@ -194,6 +197,7 @@ export default function Home() {
             alt="covmodel"
             width={1000}
             height={300}
+            priority
           />
           </div>
       </div>
@@ -240,18 +244,21 @@ export default function Home() {
               alt="a"
               width={480}
               height={450}
+              priority
             />
             <Image
               src="/e.jpg"
               alt="e"
               width={480}
               height={450}
+              priority
             />
             <Image
               src="/i.jpg"
               alt="i"
               width={480}
               height={450}
+              priority
             />
           </div>
 
@@ -261,18 +268,21 @@ export default function Home() {
               alt="o"
               width={480}
               height={450}
+              priority
             />
             <Image
               src="/u.jpg"
               alt="u"
               width={480}
               height={450}
+              priority
             />
             <Image
               src="/y.jpg"
               alt="y"
               width={480}
               height={450}
+              priority
             />
           </div>
         </div>
@@ -302,6 +312,7 @@ export default function Home() {
                 alt="unity"
                 width={20}
                 height={20}
+                priority
               /></div>
               <div className="pl-2">
               <Image
@@ -309,6 +320,7 @@ export default function Home() {
                 alt="vs"
                 width={20}
                 height={20}
+                priority
               /></div>
               <div className="pl-2">
               <Image
@@ -316,6 +328,7 @@ export default function Home() {
                 alt="vs"
                 width={24}
                 height={24}
+                priority
               /></div>
               <div className="pl-2">
               <Image
@@ -323,6 +336,7 @@ export default function Home() {
                 alt="vs"
                 width={19}
                 height={19}
+                priority
               /></div>
           </div></div>
       </div>
@@ -372,11 +386,12 @@ export default function Home() {
       </div>
       </div>
       <div className="min-h-96 bg-white flex flex-row justify-center items-center">
-        <img
+        <Image
           src="/paincare2.png"
           alt="paincare"
           width={1000}
           height={500}
+          priority
           />
         {/*<Spline
           scene="https://prod.spline.design/kjRkvsu18xkfylrL/scene.splinecode"
@@ -408,6 +423,7 @@ export default function Home() {
                 alt="spring"
                 width={21}
                 height={21}
+                priority
               /></Link>
               </div>
               <div className="pl-2">
@@ -417,6 +433,7 @@ export default function Home() {
                 alt="next"
                 width={22}
                 height={22}
+                priority
               /></Link>
               </div>
               <div className="pl-2">
@@ -426,6 +443,7 @@ export default function Home() {
                 alt="threejs"
                 width={20}
                 height={20}
+                priority
               /></Link></div>
               <div className="pl-2">
               <Link href="https://reactjs.org">
@@ -434,6 +452,7 @@ export default function Home() {
                 alt="react"
                 width={20}
                 height={20}
+                priority
               /></Link></div>
               <div className="pl-2">
               <Link href="https://tailwindcss.com">
@@ -442,6 +461,7 @@ export default function Home() {
                 alt="twcss"
                 width={22}
                 height={22}
+                priority
               /></Link></div>
               <div className="pl-2">
               <Link href="https://docker.com">
@@ -449,14 +469,16 @@ export default function Home() {
                 src="/docker.svg"
                 alt="docker"
                 width={20}
-                height={20}/></Link></div>
+                height={20}
+                priority/></Link></div>
               <div className="pl-2">
               <Link href="https://postgresql.org">
               <Image
                 src="/postgresql.svg"
                 alt="postgresql"
                 width={20}
-                height={20}/></Link></div>
+                height={20}
+                priority/></Link></div>
           </div></div>
       </div>
       <div className="min-h-96 bg-zinc-100 flex flex-row justify-center items-start px-10 pt-10 pb-60 text-black ">
@@ -510,6 +532,7 @@ export default function Home() {
             className="rounded-xl opacity-75 drop-shadow"
             height={700}
             width={700}
+            priority
             />
           </div>
           </div>
@@ -541,6 +564,7 @@ export default function Home() {
                 alt="rust"
                 width={21}
                 height={21}
+                priority
               /></Link>
               </div>
               <div className="pl-2">
@@ -550,6 +574,7 @@ export default function Home() {
                 alt="utm"
                 width={22}
                 height={22}
+                priority
               /></Link>
               </div>
           </div></div>

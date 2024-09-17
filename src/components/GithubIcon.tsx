@@ -12,7 +12,8 @@ const GithubIcon = (
             <Image
                 src={`${theme==="dark"?"GithubIcon-white.svg":"GithubIcon-black.svg"}`}
                 height={height}
-                width={width} alt={"git"}/>
+                width={width} alt={"git"}
+                priority/>
         </div>
     );
 }
