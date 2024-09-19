@@ -247,7 +247,7 @@ export default function Home() {
 
   {/* Image Section */}
   <div id='dark-cov-bg' className="min-h-screen bg-gray-950 bg-cover bg-center flex flex-wrap items-center justify-center">
-    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-0">
+    <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-0">
       <Image
         src="/a.jpg"
         alt="a"
