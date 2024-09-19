@@ -406,7 +406,7 @@ export default function Home() {
         PainCare
       </h2>
       <p className="text-2xl md:text-4xl font-semibold opacity-70 text-rose-600">
-        Women's Healthcare
+        Women&apos;s Healthcare
       </p>
     </div>
     
